@@ -100,7 +100,7 @@ module.exports = function (grunt) {
                     paths:["libs/bootstrap/less"]
                 },
                 files   :{
-                    "target/css/bootstrap.css"           :"libs/boostrap/less/backbone.less",
+                    "target/css/bootstrap.css"           :"libs/boostrap/less/bootstrap.less",
                     "target/css/bootstrap-responsive.css":"libs/boostrap/less/responsive.less"
                 }
             }
