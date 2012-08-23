@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fruit</title>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <style type="text/css">
+        header {
+            padding-top: 80px;
+        }
+
+        .paddedAnchor {
+            padding-top: 40px;
+            margin-top: -60px;
+        }
+
+        .subPaddedAnchor {
+            padding-top: 40px;
+            margin-top: -20px;
+        }
+
+        .eightHundred {
+            width: 799px;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #6c6c6c;
+            color: #fff;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body><!-- data-spy="scroll" data-target=".navbar">-->
+
+<div id="nav" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand idox-mesh-logo" href="#">Fruit</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li class="">
+                        <a href="#inspiration">Inspiration</a>
+                    </li>
+                    <!--<li class="">
+                        <a href="#technologies">Technologies Used</a>
+                    </li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Technologies Used <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="">
+                                <a href="#bootstrap">Bootstrap</a>
+                            </li>
+                            <li class="">
+                                <a href="#jquery">JQuery</a>
+                            </li>
+                            <li class="">
+                                <a href="#jqueryui">JQuery UI</a>
+                            </li>
+                            <li class="">
+                                <a href="#backbone">Backbone</a>
+                            </li>
+                            <li class="">
+                                <a href="#modernizr">Modernizr</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="">
+                                <a href="#grunt">Grunt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#build">How to Build</a>
+                    </li>
+                    <li class="">
+                        <a href="#deploy">How to Deploy</a>
+                    </li>
+                    <li class="">
+                        <a href="#examples">Examples</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<header id="overview">
+    <div class="hero-unit">
+        <h1>Fruit</h1>
+
+        <p>A Fluid Rich User Interface Toolkit - all you need to build a rich, responsive and good looking user interface.</p>
+    </div>
+</header>
+<section id="introduction" class="paddedAnchor">
+    <div class="page-header">
+        <h2>Introduction</h2>
+
+        <p>
+            Fruit is designed to be the basis of all products that have some sort of user interaction.
+            The guidelines (that have yet to be completed) will give details on how to lay out a user interface in
+            the best way that should be applicable across all different platforms (web sites, web applications,
+            desktop tools, etc).
+        </p>
+
+        <p>
+            If it the product you are building is web based, then Fruit also supplies the basic
+            technologies and styles that you would need to build your web site or web application.
+        </p>
+    </div>
+</section>
+<section id="inspiration" class="paddedAnchor">
+    <div class="page-header">
+        <h2>Inspiration</h2>
+
+        <p>
+            As part of our investigation into a UI toolkit, we drew inspiration from some of the
+            <a href="#" rel="tooltip" title="Google, Apple, Microsoft">big names</a> and
+            leaders in UI design and user experience. Below are some examples of the products and designs that have
+            inspired us.
+        </p>
+
+        <div class="eightHundred">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="docs/images/inspire1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire4.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire5.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire6.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire7.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire8.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="docs/images/inspire9.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="technologies" class="paddedAnchor">
+    <div class="page-header">
+        <h2>Technologies Used</h2>
+
+        <div class="subPaddedAnchor" id="bootstrap">
+            <h3><a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a></h3>
+
+            <p>
+                This is an open source project from the developers are Twitter that, through standard CSS classes,
+                allows us to quickly lay out web pages in a responsive grid. It also comes with default styles and
+                gives web pages a "richer" feel as it comes with a lightweight set of JQuery plugins. Fruit will
+                use Bootstrap to layout and style basic items on an HTML page.
+            </p>
+
+            <p>
+                It is heavily documented over on <a href="http://twitter.github.com/bootstrap/index.html">GitHub</a>
+                so go there to find out how to style your application. Eventually, the Bootstrap CSS will be
+                overridden by our own specific styles.
+            </p>
+
+            <h4><a href="http://bootstrap-forms.heroku.com">Form Builder</a></h4>
+
+            <p>
+                There's a <a href="http://bootstrap-forms.heroku.com">free utility</a> on the web that allows you to
+                design Bootstrap style forms through a drag and
+                drop interface. It'll generate all the correct markup for your form and use the correct Bootstrap
+                CSS classes. A word of warning - the last time I used it, the generated source code didn't quite
+                render quite as I was expecting it to but it was very minor. If nothing else, it'll be a quick way
+                of getting 80% there.
+            </p>
+        </div>
+        <div class="subPaddedAnchor" id="jquery">
+            <h3><a href="http://docs.jquery.com/Main_Page">JQuery</a></h3>
+
+            <p>
+                JQuery is, pretty much, the industry standard JavaScript library for DOM manipulation. It is also
+                required by Bootstrap to run some of it's more complex controls. Again, the
+                <a href="http://docs.jquery.com/Main_Page">documentation</a> is pretty good and there is a huge
+                community using JQuery so the chances are, anything you want to do has already been done in some
+                form or another.
+            </p>
+
+            <h4><a href="http://zeptojs.com/">Zepto</a></h4>
+
+            <p>
+                Zepto is very similar to JQuery but doesn't contain any of the clever fallbacks to make code work
+                on older browsers and so is suited to use with mobile sites. If you wish to load a smaller library
+                for your mobile site, there is an <code>fruit-mobile.min.js</code> file that you can include
+                instead. Please note that note all functionality from JQuery is in Zepto so make sure you read the
+                <a href="http://zeptojs.com/">documentation</a> - you can't just swap them in and out.
+            </p>
+        </div>
+        <div class="subPaddedAnchor" id="jqueryui">
+            <h3><a href="http://jqueryui.com/demos">JQueryUI</a></h3>
+
+            <p>
+                <a href="http://jqueryui.com/demos">JQueryUI</a> offers a set of themeable widgets built on top of
+                JQuery to use on a web page to give a rich UI. We are using this alongside Bootstrap to give us a
+                complete as possible set of control to use on the web. Where a control type appears in both Bootstrap
+                and JQueryUI, we are using the JQueryUI version. Again, this is a very active community with lots of
+                examples to look through.
+            </p>
+
+            <h4><a href="http://www.jstree.com/documentation">jsTree</a></h4>
+
+            <p>
+                A JQuery plugin that gives us a tree control as neither Bootstrap or JQuery UI have one. It's pretty
+                powerful and can load data from multiple types of backend service.
+            </p>
+        </div>
+        <div class="subPaddedAnchor" id="backbone">
+            <h3><a href="http://backbonejs.org">Backbone</a></h3>
+
+            <p>
+                Backbone is a JavaScript (sort of) MVC. It allows us to give structure to client side applications
+                as well as giving us bindings and an event modal. It also includes a RESTful interface to talk to
+                the back end.
+            </p>
+
+            <h4><a href="https://github.com/theironcook/Backbone.ModelBinder">Backbone Model Binder</a></h4>
+
+            <p>
+                As flexible as Backbone is, it doesn't natively refresh the UI when the data model is changed behind the
+                scenes. To rectify this, we've included a plugin for Backbone that gives is this binding. The
+                documentation on <a href="https://github.com/theironcook/Backbone.ModelBinder">GitHub</a> has all the
+                information you should need.
+            </p>
+        </div>
+        <div class="subPaddedAnchor" id="modernizr">
+            <h3><a href="http://modernizr.com">Modernizr</a></h3>
+
+            <p>
+                Gives HTML5 features to older browsers and also allows us to load resources based on browser features or
+                media queries.
+            </p>
+        </div>
+        <div class="subPaddedAnchor" id="grunt">
+            <h3><a href="https://github.com/cowboy/grunt">Grunt</a></h3>
+
+            <p>
+                Front end build system built on top of <a href="http://nodejs.org">Node.js</a>. It validates JS and CSS
+                as well as compiling LESS files. It is also used to concatenate and minifies CSS and JS files.
+            </p>
+
+            <h4><a href="https://github.com/gruntjs/grunt-contrib">Grunt Contrib</a></h4>
+
+            <p>
+                Grunt is designed to be easily extensible via custom Grunt tasks. The guys at grunt-contrib have tried
+                to put together some common tasks in one package which we're using to complete our build system.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="build" class="paddedAnchor">
+    <div class="page-header">
+        <h2>How to Build</h2>
+
+        <p>
+            You don't have to build this, just grab the latest version from the
+            <a href="http://glacvs.i-documentsystems.com/repository/releases/solutions/fruit/">releases folder</a>
+            or include it as a dependency from the
+            <a href="http://glacvs.i-documentsystems.com/maven/fruit/zips">Maven repo</a>. If you do want to build
+            it, then you'll need to check it out from
+            <a href="http://glacvs.i-documentsystems.com/svn/Skins/trunk/fruit">SVN</a>. Once you have it checked
+            out, follow the folling steps to build Fruit:
+        </p>
+        <ol>
+            <li>Install <a href="http://nodejs.org/#download">Node.js</a></li>
+            <li>Install Grunt:
+                <ul>
+                    <li>Run, from the command line, <code>npm install -g grunt</code></li>
+                    <li><code>npm</code> is the Node package manager and the -g flag means install it globally</li>
+                </ul>
+            </li>
+            <li>Navigate to the folder where you checkedout fruit to</li>
+            <li>Install grunt-contrib:
+                <ul>
+                    <li>Run, from the command line, <code>npm install grunt-contrib</code></li>
+                    <li>No <code>-g</code> flag as this module is just installed locally</li>
+                    <li>The downloaded files will also go into a folder called <code>node_modules</code></li>
+                </ul>
+            </li>
+            <li>Run, <code>grunt.cmd</code>:
+                <ul>
+                    <li>add a <code>-v</code> flag to see the verbose information</li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            The build will be in the target/fruit folder and that folder will also be zipped up, with the version,
+            in the root of the target folder. Set up an Apache alias to here to run it through
+            <a href="http://httpd.apache.org/">Apache Web Server</a> or it should run locally.
+        </p>
+    </div>
+</section>
+<section id="deploy" class="paddedAnchor">
+    <div class="page-header">
+        <h2>How to Deploy</h2>
+
+        <p>
+            If you're just reading this file off of disk, then it's probably not styled and doesn't look very good.
+            You're probably wondering what's the point of this at all! Due to the dynamic resource loading of
+            Modernizr, this page needs to be run through a web server of sort. Download and install
+            <a href="http://httpd.apache.org/">Apache Web Server</a> and set up an alias to the root of this folder
+            and you should see this in all its glory.
+        </p>
+
+        <p>
+            Now that's working, you can look at the source of the this page to see how the script loading works and
+            also the <code>example-application.js</code> in the <code>js</code> folder. Use the folder structure
+            that's supplied and add in your application specific files to the correct location.
+        </p>
+    </div>
+</section>
+<section id="examples" class="paddedAnchor">
+    <div class="page-header">
+        <h2>Examples</h2>
+
+        <p>
+            Here are some examples to get you started. You can view source to have a look at the code required. It's
+            all fully documented of course.
+        </p>
+
+        <h3>Registration Form</h3>
+
+
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="control-group">
+
+                    <!-- Select Basic -->
+                    <label class="control-label" for="title">Title</label>
+
+                    <div class="controls">
+                        <select id="title" class="input-xlarge">
+                            <option>Mr</option>
+                            <option>Mrs</option>
+                            <option>Miss</option>
+                            <option>Ms</option>
+                            <option>Dr</option>
+                            <option>Prof</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="control-group">
+
+                    <!-- Text input-->
+                    <label class="control-label" for="input01">Forename</label>
+
+                    <div class="controls">
+                        <input type="text" id="input01" placeholder="e.g. Iain" class="input-xlarge">
+
+                        <p class="help-block">Please enter your forename</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+
+                    <!-- Text input-->
+                    <label class="control-label" for="input02">Surname</label>
+
+                    <div class="controls">
+                        <input type="text" id="input02" placeholder="e.g. Cochrane" class="input-xlarge">
+
+                        <p class="help-block">Please enter your surname</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+
+                    <!-- Textarea -->
+                    <label class="control-label" for="address">Address</label>
+
+                    <div class="controls">
+                        <div class="textarea">
+                            <textarea class="input-xlarge" id="address"> </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="countryGroup" class="control-group">
+
+                    <!-- Text input-->
+                    <label class="control-label" for="country">Country</label>
+
+                    <div class="controls">
+                        <input type="search" id="country" placeholder="just start typing..."
+                               class="input-xlarge search-query" data-provide="typeahead"/>
+
+                        <p id="countryHelpText" class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Contact Options</label>
+
+                    <div class="controls">
+                        <!-- Multiple Checkboxes -->
+                        <label class="checkbox">
+                            <input type="checkbox" value="Phone">
+                            Phone
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="Email">
+                            Email
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="Mail">
+                            Mail
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="Pop Over">
+                            Pop Over
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Email Preference</label>
+
+                    <div class="controls">
+                        <!-- Multiple Radios -->
+                        <label class="radio">
+                            <input type="radio" value="HTML" name="email" checked="checked">
+                            HTML
+                        </label>
+                        <label class="radio">
+                            <input type="radio" value="Plain" name="email">
+                            Plain
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" id="registerBtn"><i class="icon-user icon-white"></i> Register</button>
+                    <button class="btn" id="registerCancel">Cancel</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</section>
+</div>
+<footer>
+    <p>This page was produced using the Fruit.</p>
+</footer>
+<script type="text/javascript" src="js/loader.js"></script>
+</body>
+</html>
